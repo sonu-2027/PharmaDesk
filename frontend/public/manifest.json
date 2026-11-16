@@ -1,0 +1,12 @@
+{
+  "short_name": "PharmaDesk",
+  "name": "PharmaDesk",
+  "icons": [
+    { "src": "logo192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "pharma-logo.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#637A60",
+  "background_color": "#FFFDF2"
+}

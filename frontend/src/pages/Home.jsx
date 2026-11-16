@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { btn, btnGhost } from "../components/ui.jsx";
-import heroArt from "../assets/home-art.jpeg";
+import heroArt from "../assets/home-art2.jpeg";
 
 const features = [
   { c: "bg-peach", t: "Stock", s: "Low and out-of-stock alerts" },
@@ -52,13 +52,14 @@ export default function Home() {
         </div>
 
         <div className="order-1 lg:order-2">
-          {/* cream card hides the image's white background */}
-          <div className="rounded-[2rem] bg-cream p-4 shadow-lg sm:p-6">
+          <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem] bg-sage shadow-lg">
             <img
               src={heroArt}
-              alt="Pharmacists managing medicine stock"
-              className="mx-auto aspect-[4/3] w-full rounded-3xl object-contain mix-blend-multiply"
+              alt="Pharmacists working among oversized medicine bottles"
+              className="h-full w-full scale-110 object-cover saturate-[.75]"
             />
+            {/* soft forest tint so the lime sits inside your palette */}
+            <div className="pointer-events-none absolute inset-0 bg-forest/10 mix-blend-multiply" />
           </div>
         </div>
       </section>
