@@ -1,7 +1,14 @@
-/* Base reset and font smoothing */
-* { box-sizing: border-box; }
-html, body, #root { height: 100%; }
-body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Ensure background from App.css fills */
-#root { background: transparent; }
+body {
+  @apply bg-sage/60 font-sans text-ink;
+}
+@media print {
+  aside,
+  header,
+  .no-print {
+    display: none !important;
+  }
+}
